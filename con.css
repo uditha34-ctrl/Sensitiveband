@@ -1,0 +1,84 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Common Button Styles */
+.btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Hover zoom effect */
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Call Now Button - Green Animation */
+.call {
+  animation: greenAnim 3s infinite;
+  background-color: green;
+}
+
+/* Copy Button - No animation */
+.copy {
+  background-color: #444;
+}
+
+/* Phone number */
+.phone-number {
+  font-size: 24px;
+  color: #0f0;
+  margin-bottom: 10px;
+}
+
+/* Back to Home Button */
+.back-button {
+  margin-top: 30px;
+}
+
+.home {
+  background-color: #555;
+  animation: homeAnim 3s infinite;
+}
+
+/* Animations */
+@keyframes greenAnim {
+  0% { background-color: #00c853; }
+  50% { background-color: #43a047; }
+  100% { background-color: #00c853; }
+}
+
+@keyframes homeAnim {
+  0% { background-color: #444; }
+  50% { background-color: #888; }
+  100% { background-color: #444; }
+}
+

@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Section Styling */
+.social-section {
+  text-align: center;
+}
+
+.social-section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Buttons Container */
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Base Button Style */
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.btn .icon {
+  font-size: 22px;
+}
+
+/* Animation effect */
+.btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, #fff, transparent, #fff);
+  animation: rotate 3s linear infinite;
+  opacity: 0.2;
+}
+
+/* YouTube Button */
+.youtube {
+  background-color: #ff0000;
+}
+
+/* Facebook Button */
+.facebook {
+  background-color: #1877f2;
+}
+
+/* TikTok Button */
+.tiktok {
+  background-color: #000000;
+  border: 2px solid #fff;
+}
+/* Back to Home Button */
+.back-button {
+  margin-top: 40px;
+}
+
+.home {
+  background-color: #555;
+  animation: homeAnim 3s infinite;
+}
+
+/* Hover effect */
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Rotate animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes homeAnim {
+  0% { background-color: #444; }
+  50% { background-color: #888; }
+  100% { background-color: #444; }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="con.css" />
+</head>
+<body>
+  <div class="contact-section">
+    <h2>📞 Contact Us</h2>
+
+    <!-- Call Now Button -->
+    <a href="https://wa.me/94771234034" class="btn call">
+      📞 Call Now whtsapp
+    </a>
+
+    <!-- Phone Number Display -->
+    <div class="phone-number">0771234034</div>
+
+    <!-- Copy Button -->
+    <button class="btn copy" onclick="copyPhoneNumber()">Copy Number</button>
+    
+    <!-- Back to Home -->
+    <div class="back-button">
+      <a href="index.html" class="btn home">⬅ Back to Home</a>
+    </div>
+  </div>
+
+  <script>
+    function copyPhoneNumber() {
+      const number = "0771234034";
+      navigator.clipboard.writeText(number).then(() => {
+        alert("Phone number copied!");
+      });
+    }
+  </script>
+</body>
+</html>
